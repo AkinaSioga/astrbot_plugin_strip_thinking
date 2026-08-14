@@ -1,6 +1,6 @@
 # astrbot_plugin_strip_thinking
 
-一个很小的 AstrBot 插件，用来清理第三方模型/中转把推理内容直接混进最终正文的问题。
+一个很小的 AstrBot 插件，用来清理第三方模型/中转把推理内容<thinking></>直接混进最终正文的问题。
 
 ## 作用
 
@@ -48,3 +48,4 @@ AstrBot/data/plugins/astrbot_plugin_strip_thinking
 ## 说明
 
 本插件不负责开启或关闭模型的 Thinking/Reasoning，只负责清理第三方服务错误混入最终正文的 XML 风格推理标签。
+astrbot支持<think></>版本的清理，但是不支持<thinking></>
