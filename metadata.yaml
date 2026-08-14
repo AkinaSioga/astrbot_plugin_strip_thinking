@@ -1,7 +1,8 @@
 name: astrbot_plugin_strip_thinking
 display_name: Strip Thinking
-desc: 移除第三方模型混入最终回复正文的 <think>...</think> 与 <thinking>...</thinking> 推理块，避免推理内容被发送到聊天平台。
-short_desc: 过滤泄露到正文中的 thinking 推理标签。
-version: v1.0.0
+desc: 移除第三方模型混入最终回复正文的 <think>...</think> 与 <thinking>...</thinking> 推理块，并在发送前清理 AstrBot reasoning 注入，避免推理内容被发送到聊天平台或残留在 Agent 上下文。
+short_desc: 过滤泄露到正文和最终消息中的 thinking 推理内容。
+version: v1.1.0
 author: AkinaSioga
 repo: https://github.com/AkinaSioga/astrbot_plugin_strip_thinking
+astrbot_version: ">=4.23.1"
